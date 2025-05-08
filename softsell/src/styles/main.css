@@ -1,0 +1,240 @@
+:root {
+  --hero-bg: #146eb4;
+  --contact-bg: #146eb4;
+  --container-bg: #fff;
+  --section-bg: #f9fbff;
+  --testimonial-bg: #fff;
+  --input-bg: #fff;
+  --input-text: #1d3557;
+  --text-main: #1d3557;
+  --text-invert: #fff;
+  --btn-bg: #fff;
+  --btn-text: #146eb4;
+  --dark-blue: #102542;
+}
+
+body.dark-mode {
+  --hero-bg: #102542;
+  --contact-bg: #102542;
+  --container-bg: #102542;
+  --section-bg: #102542;
+  --testimonial-bg: #102542;
+  --input-bg: #102542;
+  --input-text: #fff;
+  --text-main: #229af6;
+  --text-invert: #102542;
+  --btn-bg: #fff;
+  --btn-text: #102542;
+}
+
+body.dark-mode p {
+  color: white !important;
+}
+
+/* Testimonial Container - wider */
+.testimonial,
+.section.testimonial,
+.section.testimonial.animated {
+  background: var(--testimonial-bg) !important;
+  color: var(--text-main) !important;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #0002;
+  margin: 1rem auto;
+  padding: 2rem 1.5rem;
+  max-width: 900px; 
+  transition: background 0.3s, color 0.3s, border 0.3s;
+  border: none;
+}
+
+/* White border in dark mode */
+.testimonial .feedback p,
+.section.testimonial .feedback p,
+.section.testimonial.animated .feedback p {
+  color: #1d3557 !important;
+}
+
+/* Feedback Container - text always black */
+.feedback {
+  background: var(--container-bg) !important;
+  color: #1d3557 !important; 
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #0002;
+  margin: 1rem auto;
+  padding: 2rem 1.5rem;
+  max-width: 700px;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+}
+
+.testimonial-card {
+  border: 2px solid #2294f6; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s ease;
+}
+
+/* General Layout */
+body {
+  background: var(--section-bg);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hero Section */
+.hero {
+  background: var(--hero-bg) !important;
+  color: #fff !important;
+  padding: 4rem 1rem 3rem 1rem;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+.hero h1, .hero p {
+  color: #fff !important;
+  margin: 0 0 1.2rem 0;
+}
+.hero .cta-btn {
+  background: #ff9800 !important;
+  color: var(--btn-text);
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+.hero .cta-btn:hover {
+  filter: brightness(0.95);
+}
+/* Contact Form Section */
+.contact-form {
+  background: var(--contact-bg) !important;
+  color: #fff !important;
+  padding: 2.5rem 1rem;
+  max-width: 420px;
+  margin: 3rem auto 2rem auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 12px #0002;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+.contact-form h2, .contact-form label, .contact-form i {
+  color: #fff !important;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.contact-form form > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.contact-form .icon {
+  min-width: 28px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  opacity: 0.8;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  flex: 1;
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  margin-left: 0.7rem;
+  transition: background 0.3s, color 0.3s;
+  box-sizing: border-box;
+  height: 44px;
+}
+.contact-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.contact-form textarea {
+  min-height: 44px;
+  max-height: 120px;
+  resize: vertical;
+}
+.contact-form button[type="submit"] {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.contact-form button[type="submit"]:hover {
+  filter: brightness(0.95);
+}
+
+/* ALL CONTAINERS (Cards, Get Paid, Upload, Valuation, Section, Step Card, Why Choose Us, etc.) */
+.card,
+.get-paid,
+.upload,
+.valuation,
+.section,
+.step-card,
+.why-choose-us {
+  background: var(--container-bg) !important;
+  color: var(--text-main) !important;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #0002;
+  margin: 1rem auto;
+  padding: 2rem 1.5rem;
+  max-width: 700px;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 1000;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px #0002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.theme-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .testimonial,
+  .section.testimonial,
+  .section.testimonial.animated { max-width: 97vw; }
+}
+@media (max-width: 700px) {
+  .hero h1 { font-size: 2rem; }
+  .card, .testimonial, .feedback, .get-paid, .upload, .valuation, .section, .step-card, .section.testimonial, .section.testimonial.animated, .why-choose-us { padding: 1.2rem 0.7rem; }
+  .contact-form { max-width: 98vw; }
+}
+
+
